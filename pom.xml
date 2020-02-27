@@ -332,6 +332,7 @@
                   <include>org.bouncycastle*:*</include>
                   <include>org.lz4*:*</include>
                   <include>commons-io:commons-io:jar:*</include>
+                  <include>javax.validation:*</include>
                 </includes>
               </artifactSet>
               <filters>
@@ -358,6 +359,10 @@
                 <relocation>
                   <pattern>org.apache.commons</pattern>
                   <shadedPattern>org.apache.pulsar.shade.org.apache.commons</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>javax.validation</pattern>
+                  <shadedPattern>org.apache.pulsar.shade.javax.validation</shadedPattern>
                 </relocation>
               </relocations>
               <transformers>

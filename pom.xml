@@ -418,5 +418,13 @@
       <id>streamnative</id>
       <url>https://api.bintray.com/maven/streamnative/maven/io.streamnative.pulsar-spark/;publish=1</url>
     </repository>
+    <repository>
+      <id>artifactory-releases</id>
+      <url>https://ci-artifactory.lucidworks.com/artifactory/fusion-dev-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>artifactory-snapshots</id>
+      <url>https://ci-artifactory.lucidworks.com/artifactory/fusion-dev-snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
 </project>
